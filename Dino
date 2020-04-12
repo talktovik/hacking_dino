@@ -1,0 +1,6 @@
+Runner.instance_.setSpeed(1000)
+var original = Runner.prototype.gameOver
+Runner.prototype.gameOver = function(){}
+Runner.prototype.gameOver = original
+Runner.instance_.distanceRan = 12345 / Runner.instance_.distanceMeter.config.COEFFICIENT
+Runner.instance_.tRex.setJumpVelocity(10)
